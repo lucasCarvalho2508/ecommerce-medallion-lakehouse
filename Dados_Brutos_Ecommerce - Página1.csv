@@ -1,0 +1,101 @@
+id_venda,data_venda,id_cliente,nome_cliente,cidade_cliente,estado_cliente,id_produto,nome_produto,categoria_produto,preco_unitario,quantidade,desconto,forma_pagamento,status_pedido
+1001,2026-03-12 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,2,10,Cartão de Crédito,CANCELADO
+1002,2026-06-01 00:00:00,105,Elena Ramos,Porto Alegre,RS,201,Notebook Gamer,Eletrônicos,4500,-1,0,Cartão de Crédito,Concluído
+1003,2026-05-10 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,,0,Boleto Bancário,CANCELADO
+1004,2026-04-25 00:00:00,104,Diego Lima,Curitiba,PR,202,Smartphone 5G,Eletrônicos,2500,,50,PIX,Concluído
+1005,2026-03-13 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,2,10,Cartão de Crédito,Em Processamento
+1006,2026-01-25 00:00:00,101,Ana Silva,São Paulo,SP,204,Teclado Mecânico,Acessórios,350,3,50,Cartão de Crédito,Em Processamento
+1007,2026-02-01 00:00:00,104,Diego Lima,Curitiba,PR,205,Mouse Sem Fio,Acessórios,150,-1,0,Boleto Bancário,Em Processamento
+1008,2026-02-19 00:00:00,103,Carla Souza,Belo Horizonte,MG,205,Mouse Sem Fio,Acessórios,150,1,0,pix,CANCELADO
+1009,2026-01-26 00:00:00,101,Ana Silva,São Paulo,SP,202,Smartphone 5G,Eletrônicos,2500,-1,50,pix,
+1010,2026-04-01 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,2,50,Boleto Bancário,Concluído
+1011,2026-03-04 00:00:00,102,bruno costa,rio de janeiro,rj,205,Mouse Sem Fio,Acessórios,150,2,,pix,
+1012,25/06/2026,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,3,0,Cartão de Crédito,CANCELADO
+1013,2026-03-10 00:00:00,103,Carla Souza,Belo Horizonte,MG,204,Teclado Mecânico,Acessórios,350,1,10,PIX,Em Processamento
+1014,2026-06-14 00:00:00,104,Diego Lima,Curitiba,PR,204,Teclado Mecânico,Acessórios,350,-1,10,PIX,Em Processamento
+1005,2026-05-18 00:00:00,102,bruno costa,rio de janeiro,rj,205,Mouse Sem Fio,Acessórios,150,3,9999,Boleto Bancário,
+1016,2026-02-26 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,2,9999,Cartão de Crédito,
+1017,2026-02-09 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,2,,Boleto,Concluído
+1018,2026-04-30 00:00:00,104,Diego Lima,Curitiba,PR,205,Mouse Sem Fio,Acessórios,150,,50,Cartão de Crédito,Concluído
+1019,2026-06-14 00:00:00,105,Elena Ramos,Porto Alegre,RS,203,Cadeira Ergonômica,Móveis,1200,3,0,Boleto,Em Processamento
+1020,2026-01-01 00:00:00,102,bruno costa,rio de janeiro,rj,204,Teclado Mecânico,Acessórios,350,3,9999,Boleto Bancário,CANCELADO
+1021,2026-06-13 00:00:00,101,Ana Silva,São Paulo,SP,203,Cadeira Ergonômica,Móveis,1200,,9999,PIX,CANCELADO
+1022,2026-05-19 00:00:00,103,Carla Souza,Belo Horizonte,MG,202,Smartphone 5G,Eletrônicos,2500,,0,Boleto,Em Processamento
+1023,2026-04-03 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,3,10,PIX,Concluído
+1024,22/01/2026,105,Elena Ramos,Porto Alegre,RS,201,Notebook Gamer,Eletrônicos,4500,-1,0,PIX,CANCELADO
+1025,2026-02-12 00:00:00,104,Diego Lima,Curitiba,PR,205,Mouse Sem Fio,Acessórios,150,3,9999,PIX,
+1026,2026-03-21 00:00:00,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,-1,50,Boleto Bancário,
+1027,2026-03-05 00:00:00,104,Diego Lima,Curitiba,PR,201,Notebook Gamer,Eletrônicos,4500,2,0,Cartão de Crédito,Em Processamento
+1028,2026-02-28 00:00:00,105,Elena Ramos,Porto Alegre,RS,205,Mouse Sem Fio,Acessórios,150,,10,Cartão de Crédito,Concluído
+1029,2026-01-18 00:00:00,101,Ana Silva,São Paulo,SP,202,Smartphone 5G,Eletrônicos,2500,1,50,Boleto Bancário,Concluído
+1005,2026-06-21 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,-1,10,Boleto Bancário,CANCELADO
+1031,2026-03-04 00:00:00,105,Elena Ramos,Porto Alegre,RS,204,Teclado Mecânico,Acessórios,350,-1,,Cartão de Crédito,CANCELADO
+1032,2026-04-01 00:00:00,101,Ana Silva,São Paulo,SP,204,Teclado Mecânico,Acessórios,350,-1,,Cartão de Crédito,
+1033,2026-04-14 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,3,0,PIX,CANCELADO
+1034,2026-04-25 00:00:00,102,bruno costa,rio de janeiro,rj,205,Mouse Sem Fio,Acessórios,150,2,,pix,CANCELADO
+1035,2026-01-20 00:00:00,104,Diego Lima,Curitiba,PR,202,Smartphone 5G,Eletrônicos,2500,-1,9999,Cartão de Crédito,Concluído
+1036,24/01/2026,105,Elena Ramos,Porto Alegre,RS,201,Notebook Gamer,Eletrônicos,4500,2,10,Boleto,
+1037,2026-04-13 00:00:00,104,Diego Lima,Curitiba,PR,202,Smartphone 5G,Eletrônicos,2500,1,10,Cartão de Crédito,
+1038,2026-04-27 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,3,,PIX,
+1039,2026-02-25 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,1,9999,pix,Concluído
+1040,2026-05-30 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,-1,9999,Cartão de Crédito,CANCELADO
+1041,2026-02-17 00:00:00,105,Elena Ramos,Porto Alegre,RS,201,Notebook Gamer,Eletrônicos,4500,1,9999,PIX,Concluído
+1042,2026-05-26 00:00:00,104,Diego Lima,Curitiba,PR,201,Notebook Gamer,Eletrônicos,4500,2,9999,Boleto Bancário,Concluído
+1043,2026-06-18 00:00:00,101,Ana Silva,São Paulo,SP,204,Teclado Mecânico,Acessórios,350,,9999,pix,Em Processamento
+1044,2026-03-03 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,3,,pix,CANCELADO
+1045,2026-01-19 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,1,,Cartão de Crédito,Concluído
+1046,2026-05-10 00:00:00,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,3,10,Cartão de Crédito,Em Processamento
+1047,2026-03-14 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,2,,Boleto Bancário,Em Processamento
+1048,20/06/2026,105,Elena Ramos,Porto Alegre,RS,201,Notebook Gamer,Eletrônicos,4500,,50,PIX,Concluído
+1049,2026-01-28 00:00:00,103,Carla Souza,Belo Horizonte,MG,201,Notebook Gamer,Eletrônicos,4500,,10,pix,Em Processamento
+1050,2026-03-29 00:00:00,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,2,50,pix,
+1051,2026-06-12 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,-1,50,Cartão de Crédito,Concluído
+1052,2026-06-13 00:00:00,103,Carla Souza,Belo Horizonte,MG,202,Smartphone 5G,Eletrônicos,2500,3,10,Boleto Bancário,
+1053,2026-01-03 00:00:00,104,Diego Lima,Curitiba,PR,205,Mouse Sem Fio,Acessórios,150,1,0,Boleto Bancário,CANCELADO
+1054,2026-05-30 00:00:00,101,Ana Silva,São Paulo,SP,203,Cadeira Ergonômica,Móveis,1200,,10,PIX,
+1055,2026-04-04 00:00:00,101,Ana Silva,São Paulo,SP,203,Cadeira Ergonômica,Móveis,1200,1,50,PIX,CANCELADO
+1056,2026-05-24 00:00:00,101,Ana Silva,São Paulo,SP,203,Cadeira Ergonômica,Móveis,1200,-1,9999,PIX,CANCELADO
+1057,2026-04-16 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,1,10,Boleto,Em Processamento
+1058,2026-02-10 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,1,,Boleto,Concluído
+1059,2026-04-28 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,3,50,PIX,CANCELADO
+1060,13/04/2026,101,Ana Silva,São Paulo,SP,202,Smartphone 5G,Eletrônicos,2500,3,50,pix,Concluído
+1061,2026-04-13 00:00:00,103,Carla Souza,Belo Horizonte,MG,205,Mouse Sem Fio,Acessórios,150,,50,Cartão de Crédito,Concluído
+1062,2026-05-29 00:00:00,103,Carla Souza,Belo Horizonte,MG,202,Smartphone 5G,Eletrônicos,2500,3,0,Boleto Bancário,Concluído
+1063,2026-03-22 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,-1,9999,Boleto,Concluído
+1064,2026-03-07 00:00:00,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,1,,Boleto Bancário,Concluído
+1065,2026-04-04 00:00:00,105,Elena Ramos,Porto Alegre,RS,202,Smartphone 5G,Eletrônicos,2500,-1,0,Boleto Bancário,Em Processamento
+1066,2026-03-18 00:00:00,103,Carla Souza,Belo Horizonte,MG,201,Notebook Gamer,Eletrônicos,4500,,50,pix,
+1067,2026-05-22 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,2,10,Boleto,
+1068,2026-05-26 00:00:00,102,bruno costa,rio de janeiro,rj,205,Mouse Sem Fio,Acessórios,150,3,,pix,Concluído
+1069,2026-04-21 00:00:00,103,Carla Souza,Belo Horizonte,MG,202,Smartphone 5G,Eletrônicos,2500,,9999,Boleto,Em Processamento
+1070,2026-06-22 00:00:00,104,Diego Lima,Curitiba,PR,204,Teclado Mecânico,Acessórios,350,2,9999,PIX,
+1071,2026-05-12 00:00:00,101,Ana Silva,São Paulo,SP,203,Cadeira Ergonômica,Móveis,1200,,50,PIX,Concluído
+1072,20/02/2026,103,Carla Souza,Belo Horizonte,MG,202,Smartphone 5G,Eletrônicos,2500,2,0,PIX,Concluído
+1073,2026-01-19 00:00:00,104,Diego Lima,Curitiba,PR,205,Mouse Sem Fio,Acessórios,150,-1,,Boleto,CANCELADO
+1074,2026-03-04 00:00:00,104,Diego Lima,Curitiba,PR,204,Teclado Mecânico,Acessórios,350,2,0,Boleto,Concluído
+1075,2026-06-28 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,,,Boleto Bancário,Concluído
+1076,2026-04-27 00:00:00,102,bruno costa,rio de janeiro,rj,201,Notebook Gamer,Eletrônicos,4500,2,,Boleto,Em Processamento
+1077,2026-04-20 00:00:00,105,Elena Ramos,Porto Alegre,RS,205,Mouse Sem Fio,Acessórios,150,,,Boleto,CANCELADO
+1078,2026-03-05 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,3,9999,PIX,
+1079,2026-01-20 00:00:00,103,Carla Souza,Belo Horizonte,MG,204,Teclado Mecânico,Acessórios,350,3,10,pix,Em Processamento
+1080,2026-01-21 00:00:00,103,Carla Souza,Belo Horizonte,MG,205,Mouse Sem Fio,Acessórios,150,2,10,Boleto,CANCELADO
+1081,2026-01-17 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,-1,,Boleto Bancário,Em Processamento
+1082,2026-01-16 00:00:00,104,Diego Lima,Curitiba,PR,204,Teclado Mecânico,Acessórios,350,2,,Boleto Bancário,
+1083,2026-04-08 00:00:00,101,Ana Silva,São Paulo,SP,205,Mouse Sem Fio,Acessórios,150,-1,0,pix,Em Processamento
+1084,18/05/2026,104,Diego Lima,Curitiba,PR,204,Teclado Mecânico,Acessórios,350,,9999,Boleto,CANCELADO
+1085,2026-04-22 00:00:00,102,bruno costa,rio de janeiro,rj,203,Cadeira Ergonômica,Móveis,1200,-1,0,pix,
+1086,2026-04-30 00:00:00,104,Diego Lima,Curitiba,PR,202,Smartphone 5G,Eletrônicos,2500,2,9999,Boleto,Concluído
+1087,2026-06-19 00:00:00,105,Elena Ramos,Porto Alegre,RS,205,Mouse Sem Fio,Acessórios,150,1,0,PIX,
+1088,2026-01-13 00:00:00,104,Diego Lima,Curitiba,PR,202,Smartphone 5G,Eletrônicos,2500,3,,PIX,Em Processamento
+1089,2026-03-28 00:00:00,104,Diego Lima,Curitiba,PR,203,Cadeira Ergonômica,Móveis,1200,-1,50,pix,
+1090,2026-01-05 00:00:00,101,Ana Silva,São Paulo,SP,204,Teclado Mecânico,Acessórios,350,,0,PIX,Em Processamento
+1091,2026-01-08 00:00:00,101,Ana Silva,São Paulo,SP,201,Notebook Gamer,Eletrônicos,4500,2,10,Boleto Bancário,Concluído
+1092,2026-02-02 00:00:00,102,bruno costa,rio de janeiro,rj,202,Smartphone 5G,Eletrônicos,2500,-1,0,Boleto,CANCELADO
+1093,2026-02-12 00:00:00,103,Carla Souza,Belo Horizonte,MG,203,Cadeira Ergonômica,Móveis,1200,,9999,PIX,Concluído
+1094,2026-05-29 00:00:00,103,Carla Souza,Belo Horizonte,MG,201,Notebook Gamer,Eletrônicos,4500,1,50,Boleto,
+1095,2026-06-01 00:00:00,102,bruno costa,rio de janeiro,rj,201,Notebook Gamer,Eletrônicos,4500,2,0,Boleto Bancário,Em Processamento
+1096,11/01/2026,101,Ana Silva,São Paulo,SP,205,Mouse Sem Fio,Acessórios,150,3,9999,pix,
+1097,2026-06-15 00:00:00,101,Ana Silva,São Paulo,SP,205,Mouse Sem Fio,Acessórios,150,3,0,Boleto,
+1098,2026-04-03 00:00:00,101,Ana Silva,São Paulo,SP,204,Teclado Mecânico,Acessórios,350,-1,10,PIX,
+1099,2026-06-07 00:00:00,105,Elena Ramos,Porto Alegre,RS,203,Cadeira Ergonômica,Móveis,1200,,,Boleto,
+1100,2026-03-24 00:00:00,105,Elena Ramos,Porto Alegre,RS,203,Cadeira Ergonômica,Móveis,1200,2,0,Boleto,Em Processamento
