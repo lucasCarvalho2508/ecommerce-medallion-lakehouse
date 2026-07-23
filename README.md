@@ -1,16 +1,18 @@
-
-```markdown
 # 🚀 E-Commerce Medallion Lakehouse
 
-Este projeto apresenta a construção completa de um **Data Lakehouse de E-Commerce**, cobrindo desde o provisionamento da infraestrutura containerizada com Docker até a entrega de um **Esquema Estrela (Star Schema)** na camada Gold e uma **CLI de Consultas Analíticas** em Python.
+Este projeto demonstra a construção completa de um **Data Lakehouse para E-Commerce**, desde o provisionamento da infraestrutura com **Docker** até a disponibilização de um **Esquema Estrela (Star Schema)** na camada **Gold** e uma **CLI de consultas analíticas** desenvolvida em Python.
 
-A arquitetura foi projetada seguindo o padrão da **Arquitetura Medalhão (Bronze, Silver e Gold)**, garantindo imutabilidade dos dados brutos, governança, qualidade de dados e alta performance para análises.
+A arquitetura segue o padrão **Medallion Architecture (Bronze → Silver → Gold)**, garantindo:
+
+- ✅ Imutabilidade dos dados brutos
+- ✅ Governança de dados
+- ✅ Qualidade e padronização
+- ✅ Alto desempenho para análises
+- ✅ Estrutura preparada para ferramentas de BI
 
 ---
 
-## 🏛️ Arquitetura e Fluxo dos Dados
-
-A pipeline processa os dados de vendas através de três camadas isoladas dentro do banco PostgreSQL:
+# 🏛️ Arquitetura do Projeto
 
 ```text
                ┌──────────────────────────────────────────────┐
@@ -20,203 +22,319 @@ A pipeline processa os dados de vendas através de três camadas isoladas dentro
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 🟤 CAMADA BRONZE (Raw Zone)                                                 │
-│ • Ingestão bruta sem alteração de esquema ou tipagem.                       │
-│ • Garante rastreabilidade, histórico imutável e reprocessabilidade.         │
+│ • Ingestão bruta dos dados                                                  │
+│ • Sem alterações de estrutura                                               │
+│ • Histórico imutável                                                        │
 └─────────────────────────────────────┬───────────────────────────────────────┘
                                       │
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ ⚪ CAMADA SILVER (Trusted Zone)                                              │
-│ • Limpeza de nulos críticos (IDs e valores ausentes) e remoção de duplicados.│
-│ • Padronização e conversão de tipos de dados (Datas, Numbers, Strings).    │
-│ • Tabela única desnormalizada, ideal para auditoria e consumo de Data Science.│
+│ • Limpeza de dados                                                          │
+│ • Remoção de duplicados                                                     │
+│ • Conversão de tipos                                                        │
+│ • Padronização dos registros                                                │
 └─────────────────────────────────────┬───────────────────────────────────────┘
                                       │
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
 │ 🟡 CAMADA GOLD (Refined Zone)                                               │
-│ • Modelagem Dimensional no formato Esquema Estrela (Star Schema).            │
-│ • Separação em Tabela Fato (fato_vendas) e Dimensões (cliente, produto, tempo).│
-│ • Estrutura otimizada para consultas analíticas e consumo de BI.            │
+│ • Modelagem Dimensional                                                     │
+│ • Esquema Estrela                                                           │
+│ • Fato + Dimensões                                                          │
+│ • Consultas otimizadas para BI                                              │
 └─────────────────────────────────────┬───────────────────────────────────────┘
                                       │
                                       ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ 🖥️ INTERFACE CLI (Terminal Python)                                           │
-│ • Menu interativo que se conecta à Gold e executa consultas SQL de KPIs.    │
+│ 🖥️ CLI Python                                                               │
+│ • Consultas analíticas                                                      │
+│ • KPIs                                                                      │
+│ • Relatórios                                                                │
 └─────────────────────────────────────────────────────────────────────────────┘
-
 ```
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
-* **Linguagem de Programação:** Python 3.10+
-* **Manipulação e Análise de Dados:** Pandas, NumPy
-* **Banco de Dados / Data Warehouse:** PostgreSQL 15 (via Docker Container)
-* **ORM / Conectividade:** SQLAlchemy, Psycopg2
-* **Containerização e Infraestrutura:** Docker, Docker Compose
-* **Gerenciamento de Ambientes:** `python-dotenv`
-* **Versionamento:** Git, GitHub
+- **Python 3.10+**
+- **Pandas**
+- **NumPy**
+- **PostgreSQL 15**
+- **SQLAlchemy**
+- **Psycopg2**
+- **Docker**
+- **Docker Compose**
+- **python-dotenv**
+- **Git**
+- **GitHub**
 
 ---
 
-## 📁 Estrutura do Repositório
+# 📂 Estrutura do Projeto
 
 ```text
 ecommerce-medallion-lakehouse/
+│
 ├── data/
-│   └── vendas.csv             # Base de dados bruta inicial
+│   └── vendas.csv
+│
 ├── src/
-│   ├── 01_ingestao_bronze.py  # Ingestão do CSV para a camada Bronze (raw)
-│   ├── 02_limpeza_silver.py   # Higienização e qualidade de dados na Silver
-│   ├── 03_modelagem_gold.py   # Construção do Star Schema na Gold
-│   └── 04_menu_consultas.py   # CLI interativa para consulta de KPIs na Gold
-├── .env.example               # Exemplo de configuração das variáveis de ambiente
-├── .gitignore                 # Arquivos ignorados pelo controle de versão
-├── docker-compose.yml         # Configuração da infraestrutura do PostgreSQL
-├── README.md                  # Documentação completa do projeto
-└── requirements.txt           # Lista de dependências do Python
-
+│   ├── 01_ingestao_bronze.py
+│   ├── 02_limpeza_silver.py
+│   ├── 03_modelagem_gold.py
+│   └── 04_menu_consultas.py
+│
+├── .env.example
+├── .gitignore
+├── docker-compose.yml
+├── requirements.txt
+└── README.md
 ```
 
 ---
 
-## 📖 Passo a Passo: Do Zero às Consultas Analíticas
+# 🚀 Como Executar o Projeto
 
-Siga o tutorial abaixo para subir o ambiente, executar as pipelines e consultar o banco de dados.
+## 1. Pré-requisitos
 
-### 1️⃣ Pré-requisitos
+Instale:
 
-Certifique-se de ter instalado em sua máquina:
-
-* [Git](https://git-scm.com/)
-* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (em execução)
-* [Python 3.10+](https://www.python.org/)
+- Git
+- Docker Desktop
+- Python 3.10+
 
 ---
 
-### 2️⃣ Clonar o Repositório e Configurar o Ambiente Virtual
-
-Abra o terminal e execute:
+## 2. Clonar o repositório
 
 ```bash
-# Clonar o repositório
-git clone [https://github.com/lucasCarvalho2508/ecommerce-medallion-lakehouse.git](https://github.com/lucasCarvalho2508/ecommerce-medallion-lakehouse.git)
+git clone https://github.com/lucasCarvalho2508/ecommerce-medallion-lakehouse.git
+
 cd ecommerce-medallion-lakehouse
-
-# Criar o ambiente virtual (Python)
-python -m venv .venv
-
-# Ativar o ambiente virtual:
-# No Windows (PowerShell):
-.\.venv\Scripts\Activate.ps1
-# No Linux/Mac:
-source .venv/bin/activate
-
-# Instalar as dependências do projeto
-pip install -r requirements.txt
-
 ```
 
 ---
 
-### 3️⃣ Configurar as Variáveis de Ambiente (`.env`)
+## 3. Criar ambiente virtual
 
-Crie um arquivo chamado **`.env`** na raiz do projeto (mesmo diretório do `docker-compose.yml`) utilizando as configurações abaixo:
+### Windows
+
+```bash
+python -m venv .venv
+
+.\.venv\Scripts\Activate.ps1
+```
+
+### Linux / Mac
+
+```bash
+python3 -m venv .venv
+
+source .venv/bin/activate
+```
+
+---
+
+## 4. Instalar dependências
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 5. Configurar o arquivo `.env`
+
+Crie um arquivo chamado `.env` na raiz do projeto.
 
 ```env
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres123
 POSTGRES_DB=lakehouse_db
-
 ```
 
 ---
 
-### 4️⃣ Subir a Infraestrutura com Docker
-
-Inicie o container do banco de dados PostgreSQL rodando em segundo plano:
+## 6. Subir o PostgreSQL
 
 ```bash
 docker compose up -d
-
 ```
 
-> **Verificação:** O container `postgres_lakehouse` estará ativo e mapeado na porta **5433** da sua máquina local.
+O banco será iniciado em segundo plano.
 
 ---
 
-### 5️⃣ Executar as Pipelines de Dados (Bronze ➔ Silver ➔ Gold)
+# 🔄 Executando a Pipeline
 
-Com o banco de dados ativo, rode os scripts da pasta `src/` em sequência para construir o Lakehouse:
+Execute os scripts na seguinte ordem.
 
-#### Passagem 1: Carga Bruta (Bronze)
-
-Lê o arquivo `data/vendas.csv` e carrega os dados brutos na tabela `bronze.vendas_raw`:
+## Bronze
 
 ```bash
 python src/01_ingestao_bronze.py
-
 ```
 
-#### Passagem 2: Higienização e Qualidade (Silver)
+Responsável por carregar o arquivo CSV para:
 
-Aplica regras de tratamento, remoção de registros nulos/duplicados e tipagem correta, gerando a tabela `silver.vendas_limpas`:
+```text
+bronze.vendas_raw
+```
+
+---
+
+## Silver
 
 ```bash
 python src/02_limpeza_silver.py
-
 ```
 
-#### Passagem 3: Modelagem Dimensional (Gold)
+Responsável por:
 
-Transforma a tabela desnormalizada da Silver em um **Esquema Estrela** completo na camada Gold:
+- remover nulos
+- remover duplicados
+- converter tipos
+- padronizar dados
+
+Resultado:
+
+```text
+silver.vendas_limpas
+```
+
+---
+
+## Gold
 
 ```bash
 python src/03_modelagem_gold.py
-
 ```
+
+Cria o modelo dimensional:
+
+- fato_vendas
+- dim_cliente
+- dim_produto
+- dim_tempo
 
 ---
 
-### 6️⃣ Consultando os Dados na Camada Gold (CLI Interativa)
+# 📊 Consultas Analíticas
 
-Para realizar análises nos dados modelados sem precisar abrir um cliente SQL externo, execute a CLI interativa no terminal:
+Execute:
 
 ```bash
 python src/04_menu_consultas.py
-
 ```
 
-A interface exibirá o menu abaixo para navegação rápida:
+Menu disponível:
 
 ```text
-──────────────────────────────────────────────────
-🚀 LAKEHOUSE E-COMMERCE - CONSULTAS ANALÍTICAS (GOLD)
-──────────────────────────────────────────────────
-1️⃣ Total de Faturamento e Vendas por Categoria de Produto
-2️⃣ Top 5 Clientes que Mais Gastaram
-3️⃣ Faturamento Mensal (Evolução Temporal)
-4️⃣ Distribuição de Vendas por Formato de Pagamento
-5️⃣ Ticket Médio por Estado do Cliente
-0️⃣ Sair
-──────────────────────────────────────────────────
+🚀 LAKEHOUSE E-COMMERCE
 
+1️⃣ Total de faturamento por categoria
+
+2️⃣ Top 5 clientes
+
+3️⃣ Evolução mensal do faturamento
+
+4️⃣ Distribuição por forma de pagamento
+
+5️⃣ Ticket médio por estado
+
+0️⃣ Sair
 ```
 
 ---
 
-## 📊 Detalhes da Modelagem Dimensional (Camada Gold)
+# ⭐ Modelagem Dimensional
 
-O esquema estrela na camada Gold é estruturado para otimizar *queries* analíticas de negócio:
+A camada Gold foi construída utilizando **Star Schema**.
 
-* **`gold.fato_vendas`**: Tabela central contendo métricas (`quantidade`, `valor_total`, `desconto`) e chaves estrangeiras (`id_cliente`, `id_produto`, `id_tempo`).
-* **`gold.dim_cliente`**: Atributos cadastrais e localização dos compradores.
-* **`gold.dim_produto`**: Catálogo de produtos, preços unitários e categorias.
-* **`gold.dim_tempo`**: Calendário de datas para inteligência temporal (ano, mês, dia, dia da semana).
+## Tabela Fato
 
-```
+### `gold.fato_vendas`
 
-```
+Contém as métricas:
+
+- quantidade
+- valor_total
+- desconto
+
+e as chaves:
+
+- id_cliente
+- id_produto
+- id_tempo
+
+---
+
+## Dimensão Cliente
+
+### `gold.dim_cliente`
+
+Contém:
+
+- Nome
+- Cidade
+- Estado
+- Demais atributos cadastrais
+
+---
+
+## Dimensão Produto
+
+### `gold.dim_produto`
+
+Contém:
+
+- Produto
+- Categoria
+- Preço Unitário
+
+---
+
+## Dimensão Tempo
+
+### `gold.dim_tempo`
+
+Permite análises por:
+
+- Ano
+- Mês
+- Dia
+- Dia da semana
+
+---
+
+# 🎯 Objetivos do Projeto
+
+Este projeto demonstra conceitos de Engenharia de Dados como:
+
+- Arquitetura Medalhão
+- ETL/ELT
+- Data Lakehouse
+- PostgreSQL
+- Docker
+- Modelagem Dimensional
+- Star Schema
+- SQL Analítico
+- Python para Engenharia de Dados
+
+---
+
+# 👨‍💻 Autor
+
+**Lucas Carvalho**
+
+GitHub:
+
+> https://github.com/lucasCarvalho2508
+
+---
+
+# 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e demonstração de conceitos de Engenharia de Dados.readme.md
